@@ -83,38 +83,69 @@ footer{
 caption{
     padding: 1rem;
 }
-@media (max-width: 480px) {
+@media (max-width: 760px) {
     body {
         font-size: 14px;
-        padding: 5px;
-    }
-    header {
-        flex-direction: column;
-        text-align: center;
         padding: 0.5rem;
     }
-    .header-content {
-        border-left: none;
-        margin-top: 5px;
+
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
     }
-    img {
-        height: 120px;
-        width: 120px;
-        margin: 10px auto;
+
+    .name h1 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .header-content {
+        margin-top: 0.5rem;
+    }
+
+    .img img {
+        width: 140px;
+        height: auto;
+        margin: 1rem auto;
         display: block;
     }
-    .programs, .internship {
-        margin-left: 10px;
+
+    .myself p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        padding: 0.5rem;
     }
+
+    main {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .language, .projects {
+        margin: 0.5rem 0;
+    }
+
     table {
-        font-size: 12px;
+        width: 100%;
+        font-size: 13px;
+        overflow-x: auto;
+        display: block;
     }
+
     table th, table td {
-        padding: 4px;
+        padding: 6px;
     }
+
     footer {
+        font-size: 13px;
         padding: 1rem;
-        font-size: 12px;
-        position: static; /* so it won’t overlap content on small screens */
+        text-align: center;
+    }
+
+    .social a {
+        display: inline-block;
+        margin: 0.25rem;
     }
 }
